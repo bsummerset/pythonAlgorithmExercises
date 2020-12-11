@@ -25,3 +25,41 @@
 # of text as described above. If you have an urge to implement your solution by converting input into a text
 #  string containing "binary" data -- resist that urge and find a different approach. See below for more 
 # details on how to submit materials to complete part 1.
+
+
+# This function takes the four lists of binary characters, and calculates the sum of the encoded phrase
+# The following table shows the values we need to lookup the list element associated with the binary exponent
+
+
+
+
+
+
+#     Power      |  32  |   31  |   30  |   29  |   28  |   27  |   26  |   25  |   24  |   23  |
+#   List (0-3)   |  0   |   1   |   2   |   3   |   0   |   1   |   2   |   3   |   0   |   1   |
+#   Item (0-7)   |  0   |   0   |   0   |   0   |   1   |   1   |   1   |   1   |   2   |   2   |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Then the required lookup follows the following patterns
+# List -> rem = (32 - i) % 4
+# Item -> item = math.floor((32-i)/4)
+# The selection will then have the indices of list[rem][item]
