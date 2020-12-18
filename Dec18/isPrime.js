@@ -8,3 +8,9 @@ function isPrime(x) {
 console.log(isPrime(7))
 console.log(isPrime(119))
 console.log(isPrime(957))
+
+function testPrime(n) {
+    if (n === 0 || n === 1) {
+        return false
+    }
+}

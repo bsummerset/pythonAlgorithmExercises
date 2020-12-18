@@ -7,3 +7,10 @@ function countLetter(text, letter) {
 
 console.log(countLetter('digitalcrafts', 't'))
 console.log(countLetter('waffle', 'f'))
+
+function charCount (str, letter) {
+    let letterCount = 0;
+    for (i = 0; i < str.length; i ++){
+        if (str.charAt (i))
+    }
+}
