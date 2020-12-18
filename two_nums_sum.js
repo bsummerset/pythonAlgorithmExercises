@@ -1,3 +1,4 @@
+// create two shuffled arrays
 var _ = require('lodash');
 
 let arr1 = []
@@ -7,7 +8,7 @@ for (let i =1; i < 10; i++){
     arr2.push(10 - i)
 }
 
-let num = _.random(3)
+let num = _.random(4)
 
 for (let i = 0; i < num; i ++){
     arr1.pop()
@@ -17,6 +18,7 @@ for (let i = 0; i < num; i ++){
 arr1 = _.shuffle(arr1)
 arr2 = _.shuffle(arr2)
 
+// test function
 function arrTest(arr, s){
 
     let holder = new Set()
@@ -30,8 +32,8 @@ function arrTest(arr, s){
         }
     })
 
-    let statement = (found) ? '' : 'not'
-    console.log(`Array of: ${arr} and sum of ${s} was ${statement} found`)
+    let statement = (found) ? '' : 'not '
+    console.log(`Array of: ${arr} and sum of ${s} was ${statement + 'found'}`)
 
     return found
 
